@@ -2,35 +2,35 @@
 export const projects = [
     {
         id: 1,
-        title: 'Aulas App',
-        description: 'Aplicación web para gestión de aulas y mantenimiento. Desarrollada con Vue 3, Node.js y SQLite.',
-        image: null, // Add image path here later
-        tags: ['Vue 3', 'Node.js', 'SQLite', 'TailwindCSS'],
-        liveUrl: '#',
-        githubUrl: '#',
-        youtubeId: null, // YouTube video ID for embed
+        title: 'Mord_52 - TikTok',
+        description: 'Mi canal de animación en TikTok. Animaciones, contenido creativo y mucho más.',
+        image: '/mord.jpeg',
+        tags: ['Animación', 'TikTok', 'Contenido Creativo'],
+        liveUrl: 'https://www.tiktok.com/@mord_52',
+        githubUrl: null,
+        youtubeId: null,
         featured: true
     },
     {
         id: 2,
-        title: 'Proyecto 2',
-        description: 'Descripción del proyecto. Edita este archivo para agregar tus propios proyectos.',
-        image: null,
-        tags: ['Vue', 'JavaScript'],
-        liveUrl: '#',
-        githubUrl: '#',
+        title: 'Gasparin52 - YouTube',
+        description: 'Mi canal de YouTube. Videos de tecnología, animaciones, gaming y mucho más.',
+        image: '/perfil_youtube.jpg',
+        tags: ['YouTube', 'Videos', 'Contenido'],
+        liveUrl: 'https://www.youtube.com/@gasparin52',
+        githubUrl: null,
         youtubeId: null,
         featured: false
     },
     {
         id: 3,
-        title: 'Proyecto 3',
-        description: 'Otro proyecto increíble. Puedes agregar un video de YouTube usando el campo youtubeId.',
+        title: 'Mi Película Épica de Samurays Zombies',
+        description: '🎬 Una producción épica que no te puedes perder. Click para ver el trailer oficial.',
         image: null,
-        tags: ['React', 'Node.js'],
-        liveUrl: '#',
-        githubUrl: '#',
-        youtubeId: 'dQw4w9WgXcQ', // Example YouTube ID
+        tags: ['Película', 'Samurays', 'Zombies', 'Épico'],
+        liveUrl: null,
+        githubUrl: null,
+        youtubeId: 'dQw4w9WgXcQ',
         featured: false
     }
 ]

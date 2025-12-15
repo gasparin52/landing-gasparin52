@@ -18,12 +18,11 @@
           <div class="relative">
             <!-- Main Image Container -->
             <div class="w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden glass-card p-2">
-              <div class="w-full h-full rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <!-- Placeholder Avatar -->
-                <svg class="w-32 h-32 text-text-muted" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-                </svg>
-              </div>
+              <img 
+                src="/franco.jpg" 
+                alt="Franco - Gasparin" 
+                class="w-full h-full rounded-xl object-cover"
+              />
             </div>
             
             <!-- Decorative Elements -->
@@ -39,26 +38,25 @@
           </h3>
           
           <p class="text-text-muted leading-relaxed">
-            Soy un desarrollador web apasionado por crear experiencias digitales únicas. 
-            Me especializo en el desarrollo frontend con Vue.js y backend con Node.js, 
-            siempre buscando aprender nuevas tecnologías.
+            Soy creador de contenido, desarrollador de videojuegos indie y técnico en informática. 
+            Me apasiona combinar la tecnología con el arte para crear experiencias únicas 
+            y proyectos que cuenten historias.
           </p>
           
           <p class="text-text-muted leading-relaxed">
-            Además del desarrollo, me gusta crear contenido y compartir lo que aprendo 
-            en diferentes plataformas. Creo que la mejor forma de aprender es enseñando.
+            También soy músico y artista, pero con un lado curioso por la ciencia. 
+            Creo que el arte y la ciencia se complementan, y me encanta explorar 
+            esa intersección en todo lo que hago.
           </p>
           
-          <!-- Quick Info Cards -->
-          <div class="grid grid-cols-2 gap-4 pt-4">
-            <div class="glass-card p-4 text-center">
-              <div class="text-3xl font-bold gradient-text">2+</div>
-              <div class="text-text-muted text-sm">Años de experiencia</div>
-            </div>
-            <div class="glass-card p-4 text-center">
-              <div class="text-3xl font-bold gradient-text">10+</div>
-              <div class="text-text-muted text-sm">Proyectos completados</div>
-            </div>
+          <!-- What I Do Tags -->
+          <div class="flex flex-wrap gap-3 pt-4">
+            <span class="px-4 py-2 rounded-full bg-primary/20 text-primary text-sm">🎮 Videojuegos Indie</span>
+            <span class="px-4 py-2 rounded-full bg-accent/20 text-accent text-sm">🎬 Creador de Contenido</span>
+            <span class="px-4 py-2 rounded-full bg-green-500/20 text-green-400 text-sm">💻 Técnico IT</span>
+            <span class="px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-sm">🎵 Músico</span>
+            <span class="px-4 py-2 rounded-full bg-pink-500/20 text-pink-400 text-sm">🎨 Artista</span>
+            <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-400 text-sm">🔬 Ciencia</span>
           </div>
           
           <!-- CTA -->

@@ -4,10 +4,10 @@
       <!-- Section Header -->
       <div class="text-center mb-16 reveal">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
-          Skills & <span class="gradient-text">Tecnologías</span>
+          Lo Que <span class="gradient-text">Hago</span>
         </h2>
         <p class="text-text-muted text-lg max-w-2xl mx-auto">
-          Herramientas y tecnologías con las que trabajo
+          Mis áreas de trabajo y habilidades
         </p>
       </div>
       
@@ -18,9 +18,9 @@
              class="reveal glass-card p-6">
           <h3 class="text-xl font-bold text-text mb-6 flex items-center gap-2">
             <!-- Category Icons -->
-            <span v-if="category.title === 'Frontend'" class="text-2xl">🎨</span>
-            <span v-else-if="category.title === 'Backend'" class="text-2xl">⚙️</span>
-            <span v-else class="text-2xl">🛠️</span>
+            <span v-if="category.title === 'Desarrollo'" class="text-2xl">🎮</span>
+            <span v-else-if="category.title === 'Arte & Multimedia'" class="text-2xl">🎨</span>
+            <span v-else class="text-2xl">💻</span>
             {{ category.title }}
           </h3>
           
@@ -44,10 +44,10 @@
         </div>
       </div>
       
-      <!-- Certifications -->
+      <!-- Areas of Interest -->
       <div class="reveal">
         <h3 class="text-2xl font-bold text-center mb-8">
-          📜 Certificaciones & Cursos
+          ✨ Áreas de Interés
         </h3>
         <div class="flex flex-wrap justify-center gap-4">
           <div v-for="cert in certifications" 

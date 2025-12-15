@@ -1,50 +1,74 @@
 <template>
   <div class="carousel-container overflow-hidden py-8">
     <div class="carousel-track flex" :style="{ animationDuration: duration + 's' }">
-      <!-- First set of images -->
-      <div v-for="(image, index) in images" 
-           :key="'a-' + index" 
-           class="carousel-item flex-shrink-0 mx-4">
-        <div class="w-64 h-80 rounded-2xl overflow-hidden glass-card">
-          <img v-if="image" 
-               :src="image" 
-               :alt="'Imagen ' + (index + 1)"
-               class="w-full h-full object-cover" />
-          <div v-else 
-               class="w-full h-full bg-card flex items-center justify-center">
-            <span class="text-text-muted text-sm">Imagen {{ index + 1 }}</span>
+      <!-- First set of videos -->
+      <a v-for="(video, index) in videos" 
+         :key="'a-' + index"
+         :href="video.url"
+         target="_blank"
+         rel="noopener noreferrer" 
+         class="carousel-item flex-shrink-0 mx-4 group">
+        <div class="w-72 h-44 rounded-2xl overflow-hidden glass-card relative">
+          <img :src="video.thumbnail" 
+               :alt="video.title"
+               class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          <!-- Play Button Overlay -->
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div class="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Platform Badge -->
+          <div class="absolute top-2 right-2 px-2 py-1 rounded bg-black/70 text-white text-xs flex items-center gap-1">
+            <span v-if="video.platform === 'youtube'" class="text-red-500">▶</span>
+            <span v-else class="text-purple-500">▶</span>
+            {{ video.platform === 'youtube' ? 'YouTube' : 'Twitch' }}
           </div>
         </div>
-      </div>
+      </a>
       
       <!-- Duplicate set for seamless loop -->
-      <div v-for="(image, index) in images" 
-           :key="'b-' + index" 
-           class="carousel-item flex-shrink-0 mx-4">
-        <div class="w-64 h-80 rounded-2xl overflow-hidden glass-card">
-          <img v-if="image" 
-               :src="image" 
-               :alt="'Imagen ' + (index + 1)"
-               class="w-full h-full object-cover" />
-          <div v-else 
-               class="w-full h-full bg-card flex items-center justify-center">
-            <span class="text-text-muted text-sm">Imagen {{ index + 1 }}</span>
+      <a v-for="(video, index) in videos" 
+         :key="'b-' + index"
+         :href="video.url"
+         target="_blank"
+         rel="noopener noreferrer" 
+         class="carousel-item flex-shrink-0 mx-4 group">
+        <div class="w-72 h-44 rounded-2xl overflow-hidden glass-card relative">
+          <img :src="video.thumbnail" 
+               :alt="video.title"
+               class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          <!-- Play Button Overlay -->
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div class="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Platform Badge -->
+          <div class="absolute top-2 right-2 px-2 py-1 rounded bg-black/70 text-white text-xs flex items-center gap-1">
+            <span v-if="video.platform === 'youtube'" class="text-red-500">▶</span>
+            <span v-else class="text-purple-500">▶</span>
+            {{ video.platform === 'youtube' ? 'YouTube' : 'Twitch' }}
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
 defineProps({
-  images: {
+  videos: {
     type: Array,
-    default: () => [null, null, null, null, null, null] // 6 placeholder slots
+    default: () => []
   },
   duration: {
     type: Number,
-    default: 30 // seconds for one complete scroll
+    default: 30
   }
 })
 </script>

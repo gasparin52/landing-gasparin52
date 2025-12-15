@@ -1,52 +1,60 @@
-// Skills and technologies data - Edit this to customize your skills
+// Skills and technologies data - Customized for Gasparin
 export const skillCategories = [
     {
         id: 1,
-        title: 'Frontend',
+        title: 'Desarrollo',
         skills: [
-            { name: 'Vue 3', level: 90, icon: 'vue' },
-            { name: 'JavaScript', level: 85, icon: 'javascript' },
-            { name: 'TailwindCSS', level: 90, icon: 'tailwind' },
-            { name: 'HTML/CSS', level: 95, icon: 'html' },
-            { name: 'Vite', level: 80, icon: 'vite' }
+            { name: 'Game Development', level: 85, icon: 'game' },
+            { name: 'Web Development', level: 80, icon: 'web' },
+            { name: 'Godot Engine', level: 75, icon: 'godot' },
+            { name: 'JavaScript', level: 80, icon: 'javascript' },
+            { name: 'Vue.js', level: 75, icon: 'vue' }
         ]
     },
     {
         id: 2,
-        title: 'Backend',
+        title: 'Arte & Multimedia',
         skills: [
-            { name: 'Node.js', level: 80, icon: 'nodejs' },
-            { name: 'Express', level: 85, icon: 'express' },
-            { name: 'SQLite', level: 75, icon: 'database' },
-            { name: 'JWT Auth', level: 70, icon: 'security' }
+            { name: 'Animación', level: 80, icon: 'animation' },
+            { name: 'Edición de Video', level: 85, icon: 'video' },
+            { name: 'Música', level: 75, icon: 'music' },
+            { name: 'Diseño Gráfico', level: 70, icon: 'design' },
+            { name: 'Pixel Art', level: 75, icon: 'pixel' }
         ]
     },
     {
         id: 3,
-        title: 'Herramientas',
+        title: 'Técnico IT',
         skills: [
-            { name: 'Git/GitHub', level: 85, icon: 'git' },
-            { name: 'PM2', level: 70, icon: 'server' },
-            { name: 'VS Code', level: 90, icon: 'code' },
-            { name: 'Linux', level: 65, icon: 'linux' }
+            { name: 'Soporte Técnico', level: 90, icon: 'support' },
+            { name: 'Redes', level: 80, icon: 'network' },
+            { name: 'Linux/Windows', level: 85, icon: 'os' },
+            { name: 'Hardware', level: 80, icon: 'hardware' }
         ]
     }
 ]
 
-// Certifications or courses
+// Areas of interest instead of certifications
 export const certifications = [
     {
         id: 1,
-        title: 'Curso de Vue.js',
-        issuer: 'Platzi / Udemy',
-        year: 2024,
-        icon: 'certificate'
+        title: 'Videojuegos Indie',
+        issuer: 'Desarrollo & Diseño',
+        year: '🎮',
+        icon: 'game'
     },
     {
         id: 2,
-        title: 'Desarrollo Web Full Stack',
-        issuer: 'Institución',
-        year: 2023,
-        icon: 'certificate'
+        title: 'Música & Audio',
+        issuer: 'Producción & Composición',
+        year: '🎵',
+        icon: 'music'
+    },
+    {
+        id: 3,
+        title: 'Ciencia & Tecnología',
+        issuer: 'Curiosidad infinita',
+        year: '🔬',
+        icon: 'science'
     }
 ]
